@@ -1,0 +1,20 @@
+body {
+	background-color: black;
+	color: white;
+	/*text-decoration: underline;*/
+	font-family: "InformeMedium", "Informe Med", monospace;
+}
+
+a {
+	color: green;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline; }
+
+@font-face {
+	font-family: 'InformeMedium';
+	src: url('InformeMedium-axmAK.ttf');
+}
