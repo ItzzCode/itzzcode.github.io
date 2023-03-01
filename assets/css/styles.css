@@ -16,5 +16,5 @@ a:active { text-decoration: underline; }
 
 @font-face {
 	font-family: 'InformeMedium';
-	src: url('InformeMedium-axmAK.ttf');
+	src: url('/assets/InformeMedium-axmAK.ttf');
 }

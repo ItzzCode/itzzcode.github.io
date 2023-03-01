@@ -1,0 +1,16 @@
+---
+layout: default
+title: Blogs
+---
+
+Here are my blogs! <br />
+
+{% for post in site.posts %}
+<ul>
+	<li>
+		<a href="{{ post.url }}">
+			<b>{{ post.title }}</b> <span style="font-size: smaller;">- {{ post.date | date_to_string }}</span>
+		</a>
+	</li>
+</ul>
+{% endfor %}
