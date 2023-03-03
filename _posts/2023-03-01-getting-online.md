@@ -9,4 +9,6 @@ At the time of this blog being published, you would be accessing this post via i
 
 For those who are familiar with the GEORGE webring, you may notice that the main page currently has a "no" in red. This is due to the fact that GEORGE has <a href="http://truttle1.xyz/truttlecities/~Itzzy/MainStreet/">http://truttle1.xyz/truttlecities/~Itzzy/MainStreet/</a> as my address, which you may notice isn't this address.
 
+UPDATE: This website is now my GEORGE site. Go check out the GEORGE, now!
+
 Now I'm switching over to this website as it gives me more control so I can make the website cooler and that (Also truttlecities has been shutdown, and I cannot edit the page anymore). Thats it I guess.
