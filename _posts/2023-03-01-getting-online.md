@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: Getting Online
-name: Getting Online
 author: Itzz Me
 ---
 
