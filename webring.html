@@ -12,12 +12,16 @@ Since 2023-03-28.
 
 <h2>Members</h2>
 <ol>
-	<li>
-		<a href="https://itzzcode.github.io">Itzz Me</a> <span class="joined">joined on 2023-03-28</span>
-	</li>
+{% for member in site.data.ringmembers %}
+<li>
+	<a href="{{ member.address }}">
+	{{ member.name }} <span style="font-size: small;">joined on {{ member.joindate }} </span>
+	</a>
+</li>
+{% endfor %}
 </ol>
 
 Wanna join? Contact me on Discord, XMPP, or Email.
 
 The widget has not been created yet, so for now enjoy this web badge.
-<a href="https://itzzcode.github.io/webring"><img src="https://itzzcode.github.io/assets/images/badges/greenring" /></a>
+<a href="https://itzzcode.github.io/webring"><img src="https://itzzcode.github.io/assets/images/badges/greenring.png" /></a>
