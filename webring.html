@@ -14,9 +14,8 @@ Since 2023-03-28.
 <ol>
 {% for member in site.data.ringmembers %}
 <li>
-	<a href="{{ member.address }}">
-	{{ member.name }} <span style="font-size: small;">joined on {{ member.joindate }} </span>
-	</a>
+	<a href="{{ member.address }}">{{ member.name }}</a>
+	<span style="font-size: small;">joined on {{ member.joindate }} </span>
 </li>
 {% endfor %}
 </ol>
