@@ -1,20 +1,22 @@
 ---
 title: The Green Ring Embed. If you are seeing this title something may have gone wrong.
+permalink: /webembed.php
 ---
-<script>
-	const url =  new URL(document.URL)
-	const params = String(url.searchParams).split("&");
-	if ( params[0].split("=")[1] !== url.host ) {
-		document.addEventListener("DOMContentLoaded", function() {
-			document.getElementById("navigation").innerHTML = "Incorrect domain name. Please recheck your iframe.";
-		});
-	}
-</script>
+{% raw %}
+<?php
+	$filelocation = "/assets/ringmembers.json"
+	$file = fopen($filelocation, "r")
+	$json = fread($file, filesize($filelocation))
+	echo $json
+	$data = json_decode($json);
+	echo $data
+?>
+{% endraw %}
 <noscript>As of now, this widget relies on javascript. Please enable it for proper function.</noscript>
 
 <div id="navigation">
 	The Green Ring
-	<a href="{{ site.data.ringmembers[0]['address'] }}">Previous</a>
+	<a href="">Previous</a>
 	<a href="">Random</a>
 	<a href="">Next</a>
 </div>
