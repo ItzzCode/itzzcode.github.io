@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'InformeMedium';
+	src: url('/assets/fonts/InformeMedium-axmAK.ttf');
+}
+
+@font-face {
+	font-family: 'RobotoMono';
+	src: url('/assets/fonts/robotomono/RobotoMono-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family: 'RobotoMonoItalic';
+	src: url('/assets/fonts/robotomono/RobotoMono-Italic-VariableFont_wght.ttf');
+}

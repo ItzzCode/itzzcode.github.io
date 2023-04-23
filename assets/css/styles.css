@@ -1,17 +1,28 @@
+@import url(/assets/css/fonts.css);
+
 :root {
 	--itzzic: 0, 175, 0;
 }
 
+@media(max-width: 800px) or (orientation: portrait) {
+	table{width: 100%;}
+}
+
 body {
-	background-color: black;
+	background-image: url('/assets/images/misc/bgstars.gif');
+	font: normal normal 300 16px 'RobotoMono';
 	color: white;
 	/*text-decoration: underline;*/
-	font-family: "InformeMedium", "Informe Med", monospace;
 }
 
 a {
 	color: rgb(var(--itzzic));
 }
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline; }
 
 div#oldsitealert {
 	background-color: rgba(var(--itzzic), 0.12);
@@ -20,12 +31,22 @@ div#oldsitealert {
 	text-align: center;
 }
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: underline; }
-a:active { text-decoration: underline; }
+#nav {
+	border-right: 1px dashed;
+	width: 10%;
+	vertical-align: top;
+}
 
-@font-face {
-	font-family: 'InformeMedium';
-	src: url('/assets/InformeMedium-axmAK.ttf');
+#footer {
+	border-top: 1px solid;
+}
+
+table {
+	margin-right: auto;
+	margin-left: auto;
+	width: 55%;
+	height: 85%;
+	border-style: ridge;
+	border-width: 5px;
+	background-color: black;
 }
