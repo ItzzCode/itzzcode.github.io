@@ -1,3 +1,7 @@
+:root {
+	--itzzic: 0, 175, 0;
+}
+
 body {
 	background-color: black;
 	color: white;
@@ -6,7 +10,14 @@ body {
 }
 
 a {
-	color: #00AF00;
+	color: rgb(var(--itzzic));
+}
+
+div#oldsitealert {
+	background-color: rgba(var(--itzzic), 0.12);
+	border: solid 3px white;
+	padding: 10px;
+	text-align: center;
 }
 
 a:link { text-decoration: none; }

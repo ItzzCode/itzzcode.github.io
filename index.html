@@ -3,10 +3,24 @@ layout: default
 title: Main
 ---
 
+<!--handling for any links that have ?oldsite=true-->
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var pagename = new URL(document.URL);
+		var query = pagename["search"].substring(1).split("&")[0]
+		if ( query == "oldsite=true" ) {
+			var a = document.getElementById("oldsite");
+			a.innerHTML =
+				"<div id='oldsitealert'>Hey! You have clicked a link for my older site, which I cannot edit anymore. You can click <a href='http://truttle1.xyz/truttlecities/~Itzzy/MainStreet/'>here</a> to go there.</div>"
+		}
+	});
+</script>
+<div id="oldsite"></div>
+
 <p>
 	Welcome to my website!
 
-	You can check out some things I've done at the <a href="links.html">Links</a> page, and later on at <a href="/games.html">Games</a>, but here's some of the cooler things:
+	You can check out some things I've done at the <a href="links.html">Links</a> page, and later on at <a href="games.html">Games</a>, but here's some of the cooler things:
 	<ul>
 		<li>This website</li>
 		<li>Voicing Skrapps in <a href="https://youtube.com/playlist?list=PLO-PlVJRfGIUQMCNAMzSVCSk5RrKk4YSj">Time Will Tell</a></li>
@@ -14,7 +28,7 @@ title: Main
 </p>
 
 <p>
-Also, check out my <a href="blogs.html">Blogs</a>, I'll try to post regularly to it.
+Also, check out my <a href="blogs.html">Blogs</a>, I'll try to post regularly to it.<sup>[<em><a>citation needed</a></em>]</sup>
 </p>
 
 <p>
@@ -31,7 +45,6 @@ Also, check out my <a href="blogs.html">Blogs</a>, I'll try to post regularly to
 			element.appendChild(document.createTextNode("Tux1 Spite Button"));
 			var page = document.getElementById("btn");
 			page.appendChild(element);
-			console.log(element);
 			// https://stackoverflow.com/a/27466982
 			document.getElementById("btn").setAttribute("onclick","main()");
 		});

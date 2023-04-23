@@ -9,6 +9,10 @@ for (i = 0; i < len(members); i++ ) {
 }
 =end
 
+# i cant fucking figure this out
+# so ill comment it out in hopes i stop being stupid and come back to any of my abbandonned projects
+
+=begin
 module RingPlugin
 	class Generator < Jekyll::Generator
 		safe true
@@ -24,3 +28,4 @@ module RingPlugin
 		end
 	end
 end
+=end
