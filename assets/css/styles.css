@@ -8,6 +8,7 @@ body {
 	background-image: url('/assets/images/misc/bgstars.gif');
 	font: normal normal 300 16px 'RobotoMono';
 	color: white;
+	overflow: hidden;
 	/*text-decoration: underline;*/
 }
 
