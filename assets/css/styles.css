@@ -5,12 +5,22 @@
 }
 
 body {
+
 	background-image: url('/assets/images/misc/bgstars.gif');
 	font: normal normal 300 16px 'RobotoMono';
 	color: white;
-	overflow: hidden;
-	/*text-decoration: underline;*/
 }
+
+/*this part is for hiding the pesky scrollbar*/
+html {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+	display: none;
+}
+
 
 a {
 	color: rgb(var(--itzzic));
