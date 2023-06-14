@@ -48,6 +48,11 @@ div#oldsitealert {
 	border-top: 1px solid;
 }
 
+.preferedcontact {
+	text-decoration: underline;
+	text-decoration-color: rgb(var(--itzzic));
+}
+
 table {
 	margin-right: auto;
 	margin-left: auto;
