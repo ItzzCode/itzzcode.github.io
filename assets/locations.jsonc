@@ -1,0 +1,406 @@
+/*  
+	this json file is maintained by Itzz Me, and it stores any locations in breadquest with anything noteworthy in it.
+	most items are derived from another list, made by munvoseli (https://raw.githubusercontent.com/munvoseli/breadquest-info/master/locations.org)
+	this includes towns, settlements, rest zones, artworks, and others, plus some unknowns I guess
+	Any values left as null are because I don't know (for example, if it was left blank munvoseli's list).
+	I'll define types here
+	A settlement is any long lasting area that protects a player from enemies (doesn't need to be somewhere to "live")
+	A rest zone is defined here: https://github.com/ostracod/breadquest/blob/master/concept.txt
+	A town is a settlement with a rest zone
+	A place is a settlement with unknown rest zone status
+	If it doesnt really fall under any of the above, its "other"
+*/
+{
+	// might change the formatting, making sure anyone reading from this knows
+	"formatVersion": 1,
+	"updated": "2023-06-27T17:11-04",
+	"locations": {
+		"Spawn": {
+			"type": "rest",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [31, 111]
+		},
+		"Stantown": {
+			"type": "town",
+			"discovered": "<2018-11-18",
+			"discoverer": null,
+			"coordinates": [-1719, -2094]
+		},
+		"Tuxtown": {
+			"type": "town",
+			"discovered": "2018-04-22",
+			"discoverer": "tux",
+			"coordinates": [175, -3775]
+		},
+		"Dusty Outpost": {
+			"type": "town",
+			"discovered": "<2019-10-31",
+			"discoverer": null,
+			"coordinates": [-1367, -2991]
+		},
+		"Musty Outpost": {
+			"type": "town",
+			"discovered": "<2019-10-31",
+			"discoverer": null,
+			"coordinates": [-815, -3617]
+		},
+		"Mel 1": {
+			"type": "rest",
+			"discovered": null,
+			"discoverer": "melody",
+			"coordinates": [-4279, -10639],
+			"note": "melody is munvoseli"
+		},
+		"Mel 2": {
+			"type": "other",
+			"discovered": null,
+			"discoverer": "melody",
+			"coordinates": [-1731, -40],
+			"note": "does not exist"
+		},
+		"Mel 3": {
+			"type": "rest",
+			"discovered": null,
+			"discoverer": "melody",
+			"coordinates": [-2024, -410]
+		},
+		"origin down (2)": {
+			"type": "rest",
+			"discovered": "2022-03-26",
+			"discoverer": "melody",
+			"coordinates": [-62, 1859]
+		},
+		"rainbow lounge": {
+			"type": "rest",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [-23, 5908],
+			"alias": "Mel 4"
+		},
+		"Mel 5": {
+			"type": "rest",
+			"discovered": null,
+			"discoverer": "melody",
+			"coordinates": [-59, 7651],
+			"note": "origin down"
+		},
+		"Mel 6": {
+			"type": "rest",
+			"discovered": null,
+			"discoverer": "melody",
+			"coordinates": [47, 22628],
+			"note": "origin down"
+		},
+		"Mel 7": {
+			"type": "rest",
+			"discovered": null,
+			"discoverer": "melody",
+			"coordinates": [-60, 25833],
+			"note": "origin down"
+		},
+		"Mel 8": {
+			"type": "rest",
+			"discovered": "2021-05-24",
+			"discoverer": "melody",
+			"coordinates": [22, 37081],
+			"note": "origin down"
+		},
+		"Mel 9": {
+			"type": "rest",
+			"discovered": "2021-05-24",
+			"discoverer": "melody",
+			"coordinates": [8640, 50014]
+		},
+		"Mel A": {
+			"type": "rest",
+			"discovered": "2021-05-30",
+			"discoverer": "melody",
+			"coordinates": [200, 25812],
+			"note": "origin down"
+		},
+		"Mel B": {
+			"type": "rest",
+			"discovered": "2021-05-31",
+			"discoverer": "melody",
+			"coordinates": [9138, 100003]
+		},
+		"Mel C": {
+			"type": "rest",
+			"discovered": "2021-05-31",
+			"discoverer": "melody",
+			"coordinates": [95, 98666],
+			"note": "origin down"
+		},
+		"origin east ubq323": {
+			"type": "place",
+			"discovered": "2020-05-16",
+			"discoverer": "ubq323",
+			"coordinates": [7529, 22]
+		},
+		"Small Wikitown": {
+			"type": "place",
+			"discovered": "2020-06-30",
+			"discoverer": "boteram",
+			"coordinates": [9103, -617]
+		},
+		"origin east": {
+			"type": "place",
+			"discovered": "2021-03-05",
+			"discoverer": "ubq323",
+			"coordinates": [11886, -176]
+		},
+		"Wikitown": {
+			"type": "place",
+			"discovered": "2020-04-26",
+			"discoverer": "boteram",
+			"coordinates": [15701, -596]
+		},
+		"Boteram cave": {
+			"type": "place",
+			"discovered": null,
+			"discoverer": "boteram",
+			"coordinates": [16044, 797]
+		},
+		"origin east mel": {
+			"type": "place",
+			"discovered": "2022-05-03",
+			"discoverer": "melody",
+			"coordinates": [17137, -526]
+		},
+		"WhileTrue Zone": {
+			"type": "place",
+			"discovered": "2021-01-27",
+			"discoverer": "viba",
+			"coordinates": [-3557, -1100]
+		},
+		"Boteram vertical 1": {
+			"type": "place",
+			"discovered": "2020-08-08",
+			"discoverer": "boteram",
+			"coordinates": [14132, 12336]
+		},
+		"Boteram vertical 2": {
+			"type": "place",
+			"discovered": null,
+			"discoverer": "boteram",
+			"coordinates": [15704, 21858]
+		},
+		"Boteram vertical 3, a few days before 2021-05-24": {
+			"type": "place",
+			"discovered": "2021-05-24",
+			"discoverer": "melody",
+			"coordinates": [15678, 29352]
+		},
+		"Boteram vertical 4": {
+			"type": "place",
+			"discovered": null,
+			"discoverer": "boteram",
+			"coordinates": [15669, 33596]
+		},
+		"Boteram vertical deep bread": {
+			"type": "place",
+			"discovered": "2021-03-28",
+			"discoverer": "boteram",
+			"coordinates": [15811, 42440]
+		},
+		"Boteram vertical A": {
+			"type": "place",
+			"discovered": "2021-09-05",
+			"discoverer": "melody",
+			"coordinates": [15696, 61392]
+		},
+		"Boteram vertical 5": {
+			"type": "place",
+			"discovered": "2021-05-31",
+			"discoverer": "melody",
+			"coordinates": [15659, 68653]
+		},
+		"Boteram vertical 6": {
+			"type": "place",
+			"discovered": "2021-05-31",
+			"discoverer": "melody",
+			"coordinates": [15770, 85222]
+		},
+		"Boteram vertical 7": {
+			"type": "place",
+			"discovered": "2021-06-13",
+			"discoverer": "melody",
+			"coordinates": [15598, 87249]
+		},
+		"Boteram vertical 8": {
+			"type": "place",
+			"discovered": "2021-06-13",
+			"discoverer": "melody",
+			"coordinates": [15593, 93143]
+		},
+		"Boteram vertical 9": {
+			"type": "place",
+			"discovered": "2021-06-14",
+			"discoverer": "melody",
+			"coordinates": [14672, 99938]
+		},
+		"poggi big sex": {
+			"type": "place",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [9127, 141]
+		},
+		"origin down": {
+			"type": "place",
+			"discovered": "2020-12-14?",
+			"discoverer": "ultlang",
+			"coordinates": [-102, 850]
+		},
+		"unknown 1": {
+			"type": "place",
+			"discovered": "2021-12-29",
+			"discoverer": "darxoon",
+			"coordinates": [950, -2419]
+		},
+		"near test chunk": {
+			"type": "place",
+			"discovered": "2022-09-01",
+			"discoverer": "melody",
+			"coordinates": [-3033, -2265]
+		},
+		"somewhere bottom left": {
+			"type": "place",
+			"discovered": "2020-05-16",
+			"discoverer": "boteram",
+			"coordinates": null
+		},
+		"unknown 2": {
+			"type": "place",
+			"discovered": "2023-03-22",
+			"discoverer": "boteram",
+			"coordinates": null
+		},
+		"unknown 3": {
+			"type": "place",
+			"discovered": "2023-03-25",
+			"discoverer": "boteram",
+			"coordinates": [4701, -2533]
+		},
+		"unknown 4": {
+			"type": "place",
+			"discovered": "2023-03-27",
+			"discoverer": "melody",
+			"coordinates": [822, 3867]
+		},
+		"unknown 5": {
+			"type": "place",
+			"discovered": "2023-03-27",
+			"discoverer": "boteram",
+			"coordinates": null
+		},
+		"unknown 6": {
+			"type": "place",
+			"discovered": "2023-04-02",
+			"discoverer": "melody",
+			"coordinates": [7603, -2751]
+		},
+		"temple of corner": {
+			"type": "other",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [-2671, -10]
+		},
+		"Bruh Zone": {
+			"type": "settlement",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [1000, 100]
+		},
+		"1000 Monument": {
+			"type": "settlement",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [1000, 25]
+		},
+		"Toast Land": {
+			"type": "settlement",
+			"discovered": "darxoon",
+			"discoverer": null,
+			"coordinates": [-615, -993]
+		},
+		"SinthTech HQ": {
+			"type": "town",
+			"coordinates": [-4637, -2417],
+			"discovered": "2023-06-06",
+			"discoverer": "sinthorion"
+		},
+		"TOCC": {
+			"type": "other",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [-2671, -10]
+		},
+		"Lone Oven": {
+			"type": "other",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [-4683, -6020]
+		},
+		"Lone Hospital": {
+			"type": "other",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [-4794, -6035]
+		},
+		"People break me": {
+			"type": "other",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [15743, 10182]
+		},
+		"sus": {
+			"type": "other",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [15702, 39573]
+		},
+		"Esperanto": {
+			"type": "other",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [345, 18]
+		},
+		"Heav base": {
+			"type": "other",
+			"discovered": null,
+			"discoverer": "heav",
+			"coordinates": [11605, -131]
+		},
+		"coral test chunk": {
+			"type": "other",
+			"discovered": null,
+			"discoverer": "coral",
+			"coordinates": [-3264, -2112]
+		},
+		"Boteram 5000 thing": {
+			"type": "other",
+			"discovered": null,
+			"discoverer": "boteram",
+			"coordinates": [5000, 0]
+		},
+		"empire": {
+			"type": "other",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [0, -1100]
+		},
+		"swimmies": {
+			"type": "other",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [-3082, -2364]
+		},
+		"": {
+			"type": null,
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": []
+		}
+	}
+}
