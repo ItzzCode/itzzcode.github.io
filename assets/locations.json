@@ -1,19 +1,19 @@
-/*  
-	this json file is maintained by Itzz Me, and it stores any locations in breadquest with anything noteworthy in it.
-	most items are derived from another list, made by munvoseli (https://raw.githubusercontent.com/munvoseli/breadquest-info/master/locations.org)
-	this includes towns, settlements, rest zones, artworks, and others, plus some unknowns I guess
-	Any values left as null are because I don't know (for example, if it was left blank munvoseli's list).
-	I'll define types here
-	A settlement is any long lasting area that protects a player from enemies (doesn't need to be somewhere to "live")
-	A rest zone is defined here: https://github.com/ostracod/breadquest/blob/master/concept.txt
-	A town is a settlement with a rest zone
-	A place is a settlement with unknown rest zone status
-	If it doesnt really fall under any of the above, its "other"
-*/
 {
-	// might change the formatting, making sure anyone reading from this knows
+	"comment": [
+		"this json file is maintained by Itzz Me, and it stores any locations in breadquest with anything noteworthy in it.",
+		"most items are derived from another list, made by munvoseli (https://raw.githubusercontent.com/munvoseli/breadquest-info/master/locations.org)",
+		"this includes towns, settlements, rest zones, artworks, and others, plus some unknowns I guess",
+		"Any values left as null are because I don't know (for example, if it was left blank munvoseli's list).",
+		"I'll define types here",
+		"A settlement is any long lasting area that protects a player from enemies (doesn't need to be somewhere to 'live')",
+		"A rest zone is defined here: https://github.com/ostracod/breadquest/blob/master/concept.txt",
+		"A town is a settlement with a rest zone",
+		"A place is a settlement with unknown rest zone status",
+		"If it doesnt really fall under any of the above, its 'other'",
+		"formatVersion is there if I change the formatting, to make sure anyone reading from this file knows"
+	],
 	"formatVersion": 1,
-	"updated": "2023-06-27T19:58-04",
+	"updated": "2023-06-28T14:08-04",
 	"locations": {
 		"origin": {
 			"type": "rest",
