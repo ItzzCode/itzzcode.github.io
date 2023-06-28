@@ -13,9 +13,16 @@
 {
 	// might change the formatting, making sure anyone reading from this knows
 	"formatVersion": 1,
-	"updated": "2023-06-27T17:11-04",
+	"updated": "2023-06-27T19:58-04",
 	"locations": {
-		"Spawn": {
+		"origin": {
+			"type": "rest",
+			"discovered": null,
+			"discoverer": null,
+			"coordinates": [0, 0],
+			"alias": "spawn"
+		},
+		"old spawn": {
 			"type": "rest",
 			"discovered": null,
 			"discoverer": null,
@@ -45,12 +52,12 @@
 			"discoverer": null,
 			"coordinates": [-815, -3617]
 		},
-		"Mel 1": {
-			"type": "rest",
+		"Cornertown": {
+			"type": "town",
 			"discovered": null,
 			"discoverer": "melody",
 			"coordinates": [-4279, -10639],
-			"note": "melody is munvoseli"
+			"note": "1. melody is munvoseli, 2. formerly Mel 1, but I (ItzzMe) made a town on it"
 		},
 		"Mel 2": {
 			"type": "other",
@@ -133,7 +140,7 @@
 			"note": "origin down"
 		},
 		"origin east ubq323": {
-			"type": "place",
+			"type": "rest",
 			"discovered": "2020-05-16",
 			"discoverer": "ubq323",
 			"coordinates": [7529, 22]
@@ -145,7 +152,7 @@
 			"coordinates": [9103, -617]
 		},
 		"origin east": {
-			"type": "place",
+			"type": "rest",
 			"discovered": "2021-03-05",
 			"discoverer": "ubq323",
 			"coordinates": [11886, -176]
@@ -163,79 +170,80 @@
 			"coordinates": [16044, 797]
 		},
 		"origin east mel": {
-			"type": "place",
+			"type": "rest",
 			"discovered": "2022-05-03",
 			"discoverer": "melody",
 			"coordinates": [17137, -526]
 		},
 		"WhileTrue Zone": {
-			"type": "place",
+			"type": "town",
 			"discovered": "2021-01-27",
 			"discoverer": "viba",
 			"coordinates": [-3557, -1100]
 		},
 		"Boteram vertical 1": {
-			"type": "place",
+			"type": "rest",
 			"discovered": "2020-08-08",
 			"discoverer": "boteram",
 			"coordinates": [14132, 12336]
 		},
 		"Boteram vertical 2": {
-			"type": "place",
+			"type": "rest",
 			"discovered": null,
 			"discoverer": "boteram",
 			"coordinates": [15704, 21858]
 		},
-		"Boteram vertical 3, a few days before 2021-05-24": {
+		"Boteram vertical 3": {
 			"type": "place",
 			"discovered": "2021-05-24",
 			"discoverer": "melody",
-			"coordinates": [15678, 29352]
+			"coordinates": [15678, 29352],
+			"note": "a few days before 2021-05-24"
 		},
 		"Boteram vertical 4": {
-			"type": "place",
+			"type": "rest",
 			"discovered": null,
 			"discoverer": "boteram",
 			"coordinates": [15669, 33596]
 		},
 		"Boteram vertical deep bread": {
-			"type": "place",
+			"type": "rest",
 			"discovered": "2021-03-28",
 			"discoverer": "boteram",
 			"coordinates": [15811, 42440]
 		},
 		"Boteram vertical A": {
-			"type": "place",
+			"type": "rest",
 			"discovered": "2021-09-05",
 			"discoverer": "melody",
 			"coordinates": [15696, 61392]
 		},
 		"Boteram vertical 5": {
-			"type": "place",
+			"type": "rest",
 			"discovered": "2021-05-31",
 			"discoverer": "melody",
 			"coordinates": [15659, 68653]
 		},
 		"Boteram vertical 6": {
-			"type": "place",
+			"type": "rest",
 			"discovered": "2021-05-31",
 			"discoverer": "melody",
 			"coordinates": [15770, 85222]
 		},
 		"Boteram vertical 7": {
-			"type": "place",
+			"type": "rest",
 			"discovered": "2021-06-13",
 			"discoverer": "melody",
 			"coordinates": [15598, 87249]
 		},
 		"Boteram vertical 8": {
-			"type": "place",
+			"type": "rest",
 			"discovered": "2021-06-13",
 			"discoverer": "melody",
 			"coordinates": [15593, 93143]
 		},
 		"Boteram vertical 9": {
-			"type": "place",
+			"type": "rest",
 			"discovered": "2021-06-14",
 			"discoverer": "melody",
 			"coordinates": [14672, 99938]
@@ -259,13 +267,13 @@
 			"coordinates": [950, -2419]
 		},
 		"near test chunk": {
-			"type": "place",
+			"type": "rest",
 			"discovered": "2022-09-01",
 			"discoverer": "melody",
 			"coordinates": [-3033, -2265]
 		},
 		"somewhere bottom left": {
-			"type": "place",
+			"type": "rest",
 			"discovered": "2020-05-16",
 			"discoverer": "boteram",
 			"coordinates": null
@@ -329,6 +337,12 @@
 			"coordinates": [-4637, -2417],
 			"discovered": "2023-06-06",
 			"discoverer": "sinthorion"
+		},
+		"Cornertown Pitstop": {
+			"type": "settlement",
+			"discovered": "2023-05",
+			"discoverer": "ItzzMe",
+			"coordinates": [-3557, -7372]
 		},
 		"TOCC": {
 			"type": "other",
