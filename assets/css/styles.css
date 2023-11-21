@@ -5,7 +5,6 @@
 }
 
 body {
-
 	background-image: url('/assets/images/misc/bgstars.gif');
 	font: normal normal 300 16px 'RobotoMono';
 	color: white;
@@ -20,7 +19,6 @@ html {
 html::-webkit-scrollbar {
 	display: none;
 }
-
 
 a {
 	color: rgb(var(--itzzic));
@@ -38,6 +36,11 @@ div#oldsitealert {
 	text-align: center;
 }
 
+li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 #nav {
 	border-right: 1px dashed;
 	width: 10%;
@@ -46,6 +49,16 @@ div#oldsitealert {
 
 #footer {
 	border-top: 1px solid;
+}
+
+.badges {
+	width: 100%;
+	margin: auto;
+}
+
+.badges img {
+	height: 31px;
+	width: 88px;
 }
 
 .preferedcontact {

@@ -6,12 +6,11 @@ title: Blogs
 <p>Here are my blogs!</p>
 <p>You may also subscribe to <a href="/feed.xml">this RSS feed</a> (you should) to get updated on my ongoings.</p>
 
-{% for post in site.posts %}
 <ul>
+{% for post in site.posts %}
 	<li>
-		<a href="{{ post.url }}">
-			<b>{{ post.title }}</b> <span style="font-size: smaller;">- {{ post.date | date_to_string }}</span>
-		</a>
+		<a href="{{ post.url }}"><b>{{ post.title }}</b></a>
+		<span style="font-size: smaller;">- {{ post.date | date_to_string }}</span>
 	</li>
-</ul>
 {% endfor %}
+</ul>
