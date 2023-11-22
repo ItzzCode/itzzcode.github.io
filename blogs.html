@@ -9,7 +9,7 @@ title: Blogs
 <ul>
 {% for post in site.posts %}
 	<li>
-		<a href="{{ post.url }}"><b>{{ post.title }}</b></a>
+		<a href="{{ post.url }}">{{ post.title }}</a>
 		<span style="font-size: smaller;">- {{ post.date | date_to_string }}</span>
 	</li>
 {% endfor %}
