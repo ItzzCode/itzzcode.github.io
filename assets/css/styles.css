@@ -32,7 +32,7 @@ body {
 
 #nav {
 	border-right: 1px dashed;
-	padding: 10px !important;
+	padding: 7px !important;
 	vertical-align: top;
 	grid-row: 1 / 2;
 	grid-column: 1 / 2;
