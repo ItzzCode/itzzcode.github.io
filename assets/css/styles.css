@@ -75,7 +75,8 @@ div#oldsitealert {
 }
 
 .badges {
-	/*HOW DO I CENTER A DIV*/
+	width: fit-content;
+	text-align: center; /*not what i wanted but eh*/
 }
 
 .badges img {
