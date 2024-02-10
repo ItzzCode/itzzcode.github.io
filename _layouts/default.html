@@ -8,9 +8,7 @@
 		{% feed_meta %}
 	</head>
 	<body>
-		<nav>
-			{% include navbar.html %}
-		</nav>
+		{% include navbar.html %}
 
 		<main>
 			<!-- johnvertisement -->
@@ -18,8 +16,6 @@
 			{{ content }}
 		</main>
 
-		<footer>
-			{% include footer.html %}
-		</footer>
+		{% include footer.html %}
 	</body>
 </html>
