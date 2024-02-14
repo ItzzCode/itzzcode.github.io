@@ -25,13 +25,16 @@ body {
 	margin-left: auto;
 	width: 60%;
 	height: 85%;
+	border-color: rgb(var(--itzzic));
 	border-style: ridge;
 	border-width: 5px;
 	background: black;
+	box-shadow: 0 0 10px 5px rgb(var(--itzzic));
+	border-radius: 3px;
 }
 
 nav {
-	border-right: 1px dashed;
+	border-right: 1px dashed rgb(var(--itzzic));
 	padding: 7px !important;
 	vertical-align: top;
 	grid-row: 1 / 2;
@@ -44,7 +47,7 @@ main {
 }
 
 footer {
-	border-top: 1px solid;
+	border-top: 1px solid rgb(var(--itzzic));
 	grid-row: 2 / 3;
 	grid-column: 1 / 3;
 }
