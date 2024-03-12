@@ -13,7 +13,7 @@
 		"formatVersion is there if I change the formatting, to make sure anyone reading from this file knows"
 	],
 	"formatVersion": 1,
-	"updated": "2023-06-28T14:08-04",
+	"updated": "2024-03-12T18:58-04",
 	"locations": {
 		"origin": {
 			"type": "rest",
@@ -409,6 +409,18 @@
 			"discovered": null,
 			"discoverer": null,
 			"coordinates": [-3082, -2364]
+		},
+		"Itzz Me 1": {
+			"type": "rest",
+			"discovered": "2024-02-02",
+			"discoverer": "Itzz Me",
+			"coordinates": [-17, -10558]
+		},
+		"y=-10000": {
+			"type": "place",
+			"discovered": "2020-04-09",
+			"discoverer": "ubq323",
+			"coordinates": [0, -10000]
 		},
 		"": {
 			"type": null,
