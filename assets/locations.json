@@ -57,7 +57,8 @@
 			"discovered": null,
 			"discoverer": "melody",
 			"coordinates": [-4279, -10639],
-			"note": "1. melody is munvoseli, 2. formerly Mel 1, but I (ItzzMe) made a town on it"
+			"note": "1. melody is munvoseli, 2. formerly Mel 1, but I (ItzzMe) made a town on it",
+			"alias": "Mel 1"
 		},
 		"Mel 2": {
 			"type": "other",
@@ -422,6 +423,13 @@
 			"discoverer": "ubq323",
 			"coordinates": [0, -10000]
 		},
+		"HTech Safe Room": {
+			"type": "place",
+			"discovered": null,
+			"discoverer": "heav",
+			"coordinates": [16383, 4],
+			"alias": "HSR"
+		}
 		"": {
 			"type": null,
 			"discovered": null,
