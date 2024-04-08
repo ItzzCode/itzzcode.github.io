@@ -1,7 +1,8 @@
 @import url(/assets/css/fonts.css);
 
 :root {
-	--itzzic: 0, 175, 0;
+	/* formerly #00af00, now #00b440 */
+	--itzzic: 0, 180, 55;
 }
 
 /*this part is for hiding the pesky scrollbar*/

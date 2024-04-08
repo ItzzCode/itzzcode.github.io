@@ -429,7 +429,7 @@
 			"discoverer": "heav",
 			"coordinates": [16383, 4],
 			"alias": "HSR"
-		}
+		},
 		"": {
 			"type": null,
 			"discovered": null,
