@@ -47,7 +47,7 @@ title: Rule Checker
         //rule 3 check
         changeStatus(3, "🌲🎄🌳🌴🎋".includes(splitMessage[0]) && splitMessage[0] != "")
         //rule 4 check
-        if(splitMessage.length >= 3)
+        if(splitMessage.length >= 4)
             changeStatus(4, splitMessage[3].toLowerCase() == "you")
         else
             changeStatus(4, false)
