@@ -1,0 +1,100 @@
+---
+layout: utility
+title: Rule Checker
+---
+<script>
+    function changeStatus(rule, status) {
+        let color = "#7f7f7f5f"
+        if(status) color = "#00af005f"
+        else color = "#af00005f"
+        const collection = document.getElementById("rules").children;
+        collection[rule-1].style.backgroundColor = color;
+    }
+
+    function clean(word) {
+        //https://stackoverflow.com/questions/4328500/how-can-i-strip-all-punctuation-from-a-string-in-javascript-using-regex
+        return word.replace(/[.,\/#!\?$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ")
+    }
+
+    function check() {
+        let message = document.getElementById("message").value
+        let splitMessage = message.split(" ")
+        splitMessage = splitMessage.map(clean)
+        
+        //rule 2 check
+        if(message.includes("?")) {
+            let trolley = false;
+            let lever = false;
+            let choice = false;
+            if(message.toLowerCase().includes("trolley")
+            || message.toLowerCase().includes("tram")
+            || message.toLowerCase().includes("train"))
+                trolley = true;
+
+            if(message.toLowerCase().includes("lever")
+            || message.toLowerCase().includes("switch")
+            || message.toLowerCase().includes("pulley"))
+                lever = true;
+
+            if(message.toLowerCase().includes("do")
+            || message.toLowerCase().includes("pull"))
+                choice = true;
+            
+            changeStatus(2, trolley && lever && choice)
+        } else {
+            changeStatus(2, true)
+        }
+        //rule 3 check
+        changeStatus(3, "🌲🎄🌳🌴🎋".includes(splitMessage[0]) && splitMessage[0] != "")
+        //rule 4 check
+        if(splitMessage.length >= 3)
+            changeStatus(4, splitMessage[3].toLowerCase() == "you")
+        else
+            changeStatus(4, false)
+        //rule 5 check
+        let rule5 = true;
+        splitMessage.forEach(word => {
+            if(word.length < 5 && word.toLowerCase().includes("i"))
+                rule5 = false
+        });
+        changeStatus(5, rule5)
+        //rule 6 check
+        let rule6 = true;
+        splitMessage.forEach(word => {
+            if(word.toLowerCase().includes("x")
+            || word.toLowerCase().includes("k")
+            || word.toLowerCase().includes("j")
+            || word.toLowerCase().includes("q"))
+                rule6 = false
+        });
+        changeStatus(6, rule6)
+    }
+</script>
+<style>
+    li {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 1%;
+        border: solid 1px white;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        background-color: #7f7f7f5f;
+    }
+</style>
+
+<p>Enter your message here:</p>
+<textarea id="message" rows="10" style="width: 99%;"></textarea>
+<button id="check" onclick="check()">Check!</button>
+
+<p>The rules:</p>
+<ol id="rules">
+    <li>You cannot type two messages in a row.</li>
+    <li>All messages with a question mark must be asked like they're a trolly problem. The ❓ or ❔ emojis cannot be used instead of a question mark to avoid this rule.</li>
+    <li>🦒<- This is Saul. Saul is quickly running out of food due to high levels of deforestation! Please start your message with a tree emoji.</li>
+    <li>The third word of your message must be "you". All messages must be at least 3 words long. (The tree from rule 3 does not count as a word.)</li>
+    <li>You cannot use the letter i in words with less than 5 letters.</li>
+    <li>🦒🦒🦒 Saul's children have a fear of the letters x, k, j and q, please avoid using these letters.</li>
+    <li>Every message must be grammatically correct.</li>
+</ol>
+<p>Rules 1 and 7 cannot be checked.</p>
+<p>Got to this page by accident? <a href="https://discord.gg/DKeBKstCnM">Click here for more context!</a></p>
